@@ -3,4 +3,4 @@ module part1(SW, LEDR);
     output [9:0] LEDR;
 
     assign LEDR = SW;
-endmodule;
+endmodule
