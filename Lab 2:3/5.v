@@ -1,6 +1,6 @@
 module part4(SW, HEX0);
     input [9:0] SW;
-    input [6:0] HEX0;
+    output [6:0] HEX0;
 
     wire [1:0] X, Y, Z, s, c;
 

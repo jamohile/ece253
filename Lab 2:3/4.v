@@ -1,5 +1,5 @@
 module cToHex(c, HEX0);
-    input [6:0] HEX0;
+    output [6:0] HEX0;
     input [1:0] c;
 
     assign HEX0[0] = 1b'0;
@@ -13,7 +13,7 @@ endmodule;
 
 module part4(SW, HEX0);
     input [9:0] SW;
-    input [6:0] HEX0;
+    output [6:0] HEX0;
 
     wire [1:0] c;
     assign c = SW[1:0];
