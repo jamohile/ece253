@@ -1,4 +1,4 @@
-module part4(SW, HEX0);
+module part5(SW, HEX0);
     input [9:0] SW;
     output [6:0] HEX0;
 
