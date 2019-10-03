@@ -13,6 +13,6 @@ module part4(SW, HEX0);
 
     mux2bit3to1 U (X, Y, Z, s, c);
     cToHex U (c, HEX0);
-endmodule;
+endmodule
 
 

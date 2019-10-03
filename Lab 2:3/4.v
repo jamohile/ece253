@@ -9,7 +9,7 @@ module cToHex(c, HEX0);
     assign HEX0[4] = !(c1 + c2);
     assign HEX0[5] = !(c1 + c2);
     assign HEX0[6] = c1 & c1;
-endmodule;
+endmodule
 
 module part4(SW, HEX0);
     input [9:0] SW;
@@ -19,5 +19,5 @@ module part4(SW, HEX0);
     assign c = SW[1:0];
 
     cToHex U (c, HEX0);
-endmodule;
+endmodule
 
