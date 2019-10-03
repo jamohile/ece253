@@ -5,7 +5,7 @@ module mux2bit2to1 (X, Y, s, M);
 
     assign M[1] = (!s & X[1]) + (s & Y[1]);
     assign M[0] = (!s & X[0]) + (s & Y[0]);
-endmodule;
+endmodule
 
 module mux2bit3to1 (X, Y, Z, s, M);
     input [1:0] X, Y, Z;
@@ -16,7 +16,7 @@ module mux2bit3to1 (X, Y, Z, s, M);
 
     mux2bit2to1 U (X, Y, s[1], M1);
     mux2bit2to1 U1 (M1, Z, s[0], M);
-endmodule;
+endmodule
 
 module part3(SW, LEDR);
     input [9:0] SW;
@@ -29,5 +29,5 @@ module part3(SW, LEDR);
     assign V = SW[3:2];
     assign W = SW[1:0];
 
-    mux2bit3to1 F (U, V, W, S, LEDR[1:0]);
-endmodule;
+    mux2bit3to1 F (U, V, W, s, LEDR[1:0]);
+endmodule
